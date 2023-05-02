@@ -8,7 +8,7 @@ Description - Here, we are storing our backend i.e state file remotely on AWS wi
 2.**backend.tf** has all terraform code which is required to provision s3 bucket and Dynamo db .
 3.**Provider.tf** has cloud provider information i.e AWS in our case . We can provision multi cloud here in provider . It also has code which helps you to store backend remotely. 
 4.**terraform.tfstate** is the state file which we will store remotely in s3. 
-5.Console after terraform init ![image](https://user-images.githubusercontent.com/36741795/235789117-ec58cbbf-4e86-4e97-bf9f-68320a1272c7.png)
+5.Console after terraform init ![Screenshot of console after terraform init](https://user-images.githubusercontent.com/36741795/235789117-ec58cbbf-4e86-4e97-bf9f-68320a1272c7.png)
 
 ```
 **Steps to run in your local machine to store Backend Remotely assuming your TF and AWS Account is set** 
@@ -22,7 +22,7 @@ Description - Here, we are storing our backend i.e state file remotely on AWS wi
 
 **Steps to run in your local machine to pull back your Backend operation locally assuming your TF and AWS Account is set** 
 ```
-Pre - Comment out the code (backend s3 block) at provider.tf and save. Refer ![image](https://user-images.githubusercontent.com/36741795/235789538-a63aeb73-5062-4056-bef9-603a8923fd16.png)
+Pre - Comment out the code (backend s3 block) at provider.tf and save. Refer ![Screenshot of commented code](https://user-images.githubusercontent.com/36741795/235789538-a63aeb73-5062-4056-bef9-603a8923fd16.png)
 
 1.terraform init -migrate-state - By running the this command , we can bring back our remotely stored file at local repo.
 
