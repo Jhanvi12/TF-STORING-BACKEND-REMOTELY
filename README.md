@@ -1,6 +1,17 @@
 # TF-STORING-BACKEND-REMOTELY
 Description - Here, we are storing our backend i.e state file remotely on AWS with the help of s3 and dynamodb.s3 is used to store the file whereas dynamodb is used to implement locking of state file .
 
+**Things we learnt 
+Terraform can store state remotely in S3 and lock that state with DynamoDB. In this Terraform project, I have shown how we can configure remote state on S3 backend and enable state locking with Dynamo DB table.
+1. Benefits of relying on Remote State
+2. Create S3 bucket resource for storing State file
+3. Create a DynamoDB table for state locking
+4. Apply changes to create s3 and dynamo DB
+5. Add the backend in terraform block
+6. Run the commands and migrate the state
+7. Test the s3 state file
+8. Remote state to local state
+
 
 **This is a terraform code to store backend remotely .This code will also help you manage storage function, operation function between local and remote.**
 ```
